@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count</title>
+    <script>
+
+        let counter = 0;
+                                                                                                                                                                                                                                                                                                                                   
+        function count() {
+            counter++;
+            document.querySelector('h1').innerHTML = counter;
+                
+            if(counter%10 ===0){
+                alert(`counter is now ${counter}`);
+            }
+        }
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('button').onclick =count;
+            });
+            
+         
+           
+            //document.addEventListener('DOMContentLoaded', function() -this will comand to read the full code.//
+
+   
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1>0</h1>
+    <button>count</button>
+</body>
+
+</html>
